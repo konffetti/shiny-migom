@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+    <!-- Начало: Данный блок удалять нельзя -->
+    <div class="maketforfigma">
+        <a href="https://t.me/s/FigmaToHTML" target="_blank">
+            <img src="img/logo.png">
+        </a>
+        <div>
+            <p>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+            </p>
+            <p>
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+            </p>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <div class="main">
+
+        <header class="header">
+          <div class="header__wrapper container">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-header.svg">
+              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+              <img class="logo-header" src="img/logo-header.svg" alt="Логотип шиномонтажа">
+            </picture>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#0">Услуги</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#0">Преимущества</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#0">Работы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#0">Цены</a>
+                </li>
+              </ul>
+              <a class="navigation__tel" href="tel:88005551326">8 (800) 555-13-26</a>
+              <button class="callback" type="button">Заказать звонок</button>
+            </nav>
+
+            <div class="burger">
+              <span class="burger-line"></span>
+              <span class="visually-hidden">Открыть меню</span>
+            </div>
+          </div>
+
+          <div class="header__content container">
+            <h1 class="main__title">мобильныЙ ШИНОМОНТАЖ №1</h1>
+            <p class="header-title__text">
+              В интернет-магазине шин Шины Мигом вы можете купить шины известных брендов. Подбор осуществляется как по типоразмеру, так и по марке авто
+            </p>
+            <button class="button header-button">Вызвать шиномонтаж</button>
+
+            <div class="modal modal__close">
+              <div class="modal__content">
+                <div class="modal-close-button">
+                  <span class="modal-close-line"></span>
+                  <span class="visually-hidden">Закрыть меню</span>
+                  <span class="modal-close-line"></span>
+                </div>
+                <h3 class="modal__title">МОБИЛЬНЫЙ ШИНОМОНТАЖ 24 ЧАСА В СУТКИ</h3>
+                <form class="modal__form" action="#0" method="post">
+                  <label class="modal__label" for="phone">Ваш телефон</label>
+                  <input class="modal__phone" type="tel" name="phone" id="phone" placeholder="+7 (_ _ _)   _ _ _    _ _    _ _">
+                  <button class="button modal-button">Оформить заявку</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__menu-popup header__menu-popup-close">
+            <div class="popup__content">
+              <a class="logo__link" href="#0">
+                <img class="logo-popup" src="img/logo-mobile.svg" alt="Логотип шиномонтажа" width="135" height="66">
+              </a>
+              <div class="close-button">
+                <span class="header-close-line"></span>
+                <span class="visually-hidden">Закрыть меню</span>
+                <span class="header-close-line"></span>
+              </div>
+              <ul class="popup-navigation__list">
+                <li class="popup-navigation__item">
+                  <a class="popup-navigation__link" href="#0">Услуги</a>
+                </li>
+                <li class="popup-navigation__item">
+                  <a class="popup-navigation__link" href="#0">Преимущества</a>
+                </li>
+                <li class="popup-navigation__item">
+                  <a class="popup-navigation__link" href="#0">Работы</a>
+                </li>
+                <li class="popup-navigation__item">
+                  <a class="popup-navigation__link" href="#0">Цены</a>
+                </li>
+              </ul>
+              <a class="popup-navigation__tel" href="tel:88005551326">8 (800) 555-13-26</a>
+              <button class="popup-callback" type="button">Заказать звонок</button>
+            </div>
+          </div>
+
+        </header>
+
+        <main class="main-page">
+          <section class="price container">
+            <div class="services">
+              <a class="services-button" href="#0">Стоимость</a>
+              <h2 class="services__title">МОБИЛЬНЫЙ РЕМОНТ И ЗАМЕНА КОЛЕС</h2>
+              <p class="services__text">
+                Услуги выездного шиномонтажа в СПб и ЛО для транспортных средств
+              </p>
+            </div>
+            <ul class="price__list">
+              <li class="price__item price__item-cars">
+                <a class="price__link price__link-cars" href="#0">от 199₽</a>
+                <h3 class="price__title">Легковые автомобили</h3>
+              </li>
+              <li class="price__item price__item-jeep">
+                <a class="price__link price__link-jeep" href="#0">от 299₽</a>
+                <h3 class="price__title price__title-jeep">Кроссоверы, джипы, минивены</h3>
+              </li>
+              <li class="price__item price__item-commercial">
+                <a class="price__link price__link-commercial" href="#0">от 299₽</a>
+                <h3 class="price__title">Коммерческий транспорт</h3>
+              </li>
+            </ul>
+          </section>
+
+          <section class="corporate">
+            <div class="container">
+              <h2 class="section__title corporate__title">Для юридических лиц</h2>
+              <div class="promo">
+                <a class="button promo-button" href="#0">Акция!</a>
+                <span class="section__text">Первое авто бесплатно!</span>
+              </div>
+            </div>
+            <div class="corporate__wrapper">
+              <div class="corporate__content">
+                <ul class="corporate__list">
+                  <li class="corporate__item">Работа с НДС</li>
+                  <li class="corporate__item">Комплексное обслуживание автопарков</li>
+                  <li class="corporate__item">Заключение договора</li>
+                  <li class="corporate__item">Оплата после выполнения работ</li>
+                </ul>
+                <form class="corporate__form" action="#0" method="post">
+                  <label class="modal__label corporate__label" for="corp-phone">Ваш телефон</label>
+                  <input class="modal__phone corporate__phone" type="tel" name="corp-phone" id="corp-phone" placeholder="+7 (_ _ _)   _ _ _    _ _    _ _">
+                  <button class="button corporate-button">Оформить заявку</button>
+                </form>
+              </div>
+              <picture class="corporate__image">
+                <source media="(min-width: 376px)" srcset="img/cars-desktop.jpg">
+                <source media="(max-width: 375px)" srcset="img/cars-mobile.jpg">
+                <img src="img/cars-desktop.jpg" alt="Логотип шиномонтажа">
+              </picture>
+            </div>
+          </section>
+
+          <section class="advantages">
+            <div class="container">
+              <h2 class="section__title advantages__title">Преимущества мобильного шиномонтажа</h2>
+              <div class="advantages__content">
+                <ul class="advantages__list">
+                  <li class="advantages__item advantages__item-first-line-left">
+                    <p class="advantages__text">Онлайн запись</p>
+                  </li>
+                  <li class="advantages__item">
+                    <p class="advantages__text">Бесконтактное <br> обслуживание</p>
+                  </li>
+                  <li class="advantages__item">
+                    <p class="advantages__text">Сертифицированное оборудование и мастера</p>
+                  </li>
+                  <li class="advantages__item">
+                    <p class="advantages__text">Гарантия на все виды работ 365 дней</p>
+                  </li>
+                </ul>
+                <img class="advantages__image" src="./img/advantages.png" alt="Шиномонтаж">
+                <ul class="advantages__list">
+                  <li class="advantages__item advantages__item-first-line-right">
+                    <p class="advantages__text">Все типы оплат</p>
+                  </li>
+                  <li class="advantages__item">
+                    <p class="advantages__text">Без очередей</p>
+                  </li>
+                  <li class="advantages__item">
+                    <p class="advantages__text">В удобном месте</p>
+                  </li>
+                  <li class="advantages__item">
+                    <p class="advantages__text">Без очередей</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="application">
+            <div class="container application__container">
+              <h2 class="section__title application__title">
+                МОБИЛЬНЫЙ ШИНОМОНТАЖ 24 ЧАСА В СУТКИ
+              </h2>
+              <form class="application__form" action="#0" method="post">
+                <label class="modal__label corporate__label" for="corp-phone">Ваш телефон</label>
+                <div class="application__form-group">
+                  <input class="modal__phone application__phone" type="tel" name="corp-phone" id="corp-phone" placeholder="+7 (_ _ _)   _ _ _    _ _    _ _">
+                  <button class="button application-button">Оформить заявку</button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="addition">
+            <div class="container">
+              <h2 class="section__title additional__title">Дополнительные работы</h2>
+            </div>
+
+          </section>
+
+<!--
+        <div class="stroke-wrapper">
+          <p class="stroke">
+            <span class="text-left">Снятие и установка колеса</span>
+            <span class="text-right">120 ₽</span>
+          </p>
+          <p class="stroke">
+            <span class="text-left">Демонтаж/монтаж шины Демонтаж/монтаж шины Демонтаж/монтаж шины Демонтаж/монтаж шины Демонтаж/монтаж шины</span>
+            <span class="text-right">125 ₽</span>
+          </p>
+          <p class="stroke">
+            <span class="text-left">Балансировка колеса с учетом грузиков</span>
+            <span class="text-right">100 ₽</span>
+          </p>
+        </div> -->
+
+      </main>
+
+      <footer class="footer">
+
+
+
+
+      </footer>
+
+
+    </div>
+
+</body>
+</html>
