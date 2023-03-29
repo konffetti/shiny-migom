@@ -212,7 +212,7 @@ body {
   padding: 28px 0 70px;
   background-image: url('../img/bg-desktop.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-color: #17181C;
   background-size: cover;
 }
@@ -743,8 +743,71 @@ body {
   background-color: #afafaf;
 }
 
+/* ------- Addition ------- */
 
+.addition {
+  padding: 46px 0 38px 0;
+}
 
+.additional__title {
+  margin-bottom: 45px;
+}
+
+.addition__list {
+  max-width: 354px;
+  margin: 0 auto 24px auto;
+}
+
+.addition__item {
+  margin-left: 20px;
+  list-style-type: disc;
+  line-height: 35px;
+}
+
+.addition__image {
+  margin: 0 auto;
+}
+
+/* ------- Map ------- */
+
+.map {
+  color: #FFFFFF;
+}
+
+.map__wrapper {
+  padding: 54px 20px 83px 20px;
+  background-image: url(../img/map-bg.png);
+  background-repeat: no-repeat;
+  background-color: #171717;
+}
+
+.map__content {
+  max-width: 367px;
+  margin: 0 auto;
+}
+
+.map__title {
+  margin-bottom: 70px;
+}
+
+.map__text {
+  position: relative;
+  padding-left: 74px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.map__text::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background: #D07C75;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
 
 
 
@@ -1063,6 +1126,70 @@ body {
   .addition {
     max-width: 970px;
     margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 118px;
+  }
+
+  .additional__title {
+    margin-bottom: 71px;
+  }
+
+  .addition__content {
+    display: flex;
+  }
+
+  .addition__list {
+    margin-left: auto;
+    margin-right: 0;
+    width: 37%;
+    order: 1;
+  }
+
+  .addition__image {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .map {
+    display: flex;
+    margin-bottom: 92px;
+  }
+
+  .map__title {
+    position: relative;
+    margin-bottom: 87px;
+    text-align: left;
+  }
+
+  .map__title::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    left: -30px;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 5px;
+  }
+
+  .map__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding-left: 77px;
+    background-image: url(../img/map-bg.png);
+    background-repeat: no-repeat;
+    background-color: #171717;
+  }
+
+  .map__content {
+    max-width: 450px;
+    margin: 0;
+  }
+
+  .map__image {
+    width: 50%;
   }
 
 }
