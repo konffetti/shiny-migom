@@ -30,9 +30,9 @@
         <header class="header">
           <div class="header__wrapper container">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/logo-header.svg">
-              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-              <img class="logo-header" src="img/logo-header.svg" alt="Логотип шиномонтажа">
+              <source media="(min-width: 768px)" srcset="./svg/logo-header.svg">
+              <source media="(max-width: 767px)" srcset="./svg/logo-mobile.svg">
+              <img class="logo-header" src="./svg/logo-header.svg" alt="Логотип шиномонтажа">
             </picture>
             <nav class="navigation">
               <ul class="navigation__list">
@@ -86,7 +86,7 @@
           <div class="header__menu-popup header__menu-popup-close">
             <div class="popup__content">
               <a class="logo__link" href="#0">
-                <img class="logo-popup" src="img/logo-mobile.svg" alt="Логотип шиномонтажа" width="135" height="66">
+                <img class="logo-popup" src="svg/logo-mobile.svg" alt="Логотип шиномонтажа" width="135" height="66">
               </a>
               <div class="close-button">
                 <span class="header-close-line"></span>
@@ -164,7 +164,7 @@
               <picture class="corporate__image">
                 <source media="(min-width: 376px)" srcset="img/cars-desktop.jpg">
                 <source media="(max-width: 375px)" srcset="img/cars-mobile.jpg">
-                <img src="img/cars-desktop.jpg" alt="Логотип шиномонтажа">
+                <img src="img/cars-desktop.jpg" alt="Автомобили на стоянке">
               </picture>
             </div>
           </section>
@@ -251,31 +251,290 @@
             <img class="map__image" src="./img/map.jpg" alt="Карта покрытия шиномонтажа">
           </section>
 
-<!--
-        <div class="stroke-wrapper">
-          <p class="stroke">
-            <span class="text-left">Снятие и установка колеса</span>
-            <span class="text-right">120 ₽</span>
-          </p>
-          <p class="stroke">
-            <span class="text-left">Демонтаж/монтаж шины Демонтаж/монтаж шины Демонтаж/монтаж шины Демонтаж/монтаж шины Демонтаж/монтаж шины</span>
-            <span class="text-right">125 ₽</span>
-          </p>
-          <p class="stroke">
-            <span class="text-left">Балансировка колеса с учетом грузиков</span>
-            <span class="text-right">100 ₽</span>
-          </p>
-        </div> -->
+          <section class="pricing">
+            <div class="pricing__wrapper">
+              <h2 class="section__title pricing__title">ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ</h2>
+              <div class="select__wrapper">
+                <p class="select__text">Выберите Ø колёс</p>
+                <details class="select">
+                  <summary class="select-button">R 13-15</summary>
+                  <ul class="select-menu">
+                    <li class="select-item select-item-active">
+                      <a class="select-option" href="#0">R 16</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#0">R 17</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#0">R 18</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#0">R 19</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#0">R 20</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#0">R 21-22</a>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <div class="range">
+                <ul class="range-scale">
+                  <li class="range-item range-item-current">R 13-15</li>
+                  <li class="range-item">R 16</li>
+                  <li class="range-item">R 17</li>
+                  <li class="range-item">R 18</li>
+                  <li class="range-item">R 19</li>
+                  <li class="range-item">R 20</li>
+                  <li class="range-item">R 21-22</li>
+                </ul>
+                <label class="range-label" for="range-slider">Выберите Ø колёс</label>
+                <input class="range-slider" type="range" min="1" max="16" value="2" id="range-slider">
+              </div>
+
+              <ul class="stroke-wrapper">
+                <li class="stroke">
+                  <span class="text-left">Снятие и установка колеса</span>
+                  <span class="text-right">120 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Демонтаж/монтаж шины</span>
+                  <span class="text-right">125 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Балансировка колеса с учетом грузиков</span>
+                  <span class="text-right">105 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Установка клапана резинового</span>
+                  <span class="text-right">30 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Установка клапана металлического</span>
+                  <span class="text-right">50 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Установка одного датчика давления</span>
+                  <span class="text-right">200 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Очистка и смазка ступицы, шпилек/болтов</span>
+                  <span class="text-right">100 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Ремонт камеры (одно повреждение)</span>
+                  <span class="text-right">350 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Ремонт прокола жгутом</span>
+                  <span class="text-right">300-600 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Ремонт прокола грибком</span>
+                  <span class="text-right">500-700 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Ремонт бокового пореза шины</span>
+                  <span class="text-right">600-1400 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Утилизация шины</span>
+                  <span class="text-right">400 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Коэф. для внедорожников и низкопрофильной резины</span>
+                  <span class="text-right">1,2</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Выезд шиномонтажа (день/ночь)</span>
+                  <span class="text-right">500/800 ₽</span>
+                </li>
+                <li class="stroke">
+                  <span class="text-left">Дополнительно оплачивается выезд за КАД</span>
+                  <span class="text-right">500/800 ₽</span>
+                </li>
+              </ul>
+              <button class="button header-button pricing-button">Вызвать шиномонтаж</button>
+            </div>
+          </section>
+
+          <section class="feedback">
+            <div class="feedback__container">
+              <h2 class="section__title feedback__title">Отзывы и рекомендации</h2>
+              <ul class="feedback__list">
+                <li class="feedback__item">
+                  <div class="feedback__video"></div>
+                  <p class="feedback__subtitle">Название компании</p>
+                  <p class="feedback__text">должность</p>
+                </li>
+                <li class="feedback__item">
+                  <div class="feedback__video"></div>
+                  <p class="feedback__subtitle">Название компании</p>
+                  <p class="feedback__text">должность</p>
+                </li>
+                <li class="feedback__item">
+                  <div class="feedback__video"></div>
+                  <p class="feedback__subtitle">Название компании</p>
+                  <p class="feedback__text">должность</p>
+                </li>
+                <li class="feedback__item">
+                  <div class="feedback__video"></div>
+                  <p class="feedback__subtitle">Название компании</p>
+                  <p class="feedback__text">должность</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="partners">
+            <div class="partners__container">
+              <h2 class="section__title partners__title">наши партнеры</h2>
+              <ul class="partners__list-mobile">
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/01.png" alt="Логотип" width="139" height="73">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/02.png" alt="Логотип" width="158" height="72">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/03.png" alt="Логотип" width="177" height="176">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/04.png" alt="Логотип" width="117" height="117">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/05.png" alt="Логотип" width="120" height="90">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/06.png" alt="Логотип" width="166" height="51">
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="partners__list-desktop">
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/01.png" alt="Логотип" width="139" height="73">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/02.png" alt="Логотип" width="158" height="72">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/03.png" alt="Логотип" width="177" height="176">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/03.png" alt="Логотип" width="177" height="176">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/04.png" alt="Логотип" width="117" height="117">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/05.png" alt="Логотип" width="120" height="90">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/05.png" alt="Логотип" width="120" height="90">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/06.png" alt="Логотип" width="166" height="51">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/02.png" alt="Логотип" width="158" height="72">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="#0" class="partners__link">
+                    <img class="partners__logo" src="./img/logo-partners/03.png" alt="Логотип" width="177" height="176">
+                  </a>
+                </li>
+              </ul>
+
+              <div class="partners-button__group">
+                <button class="partners-button partners-button-prev" type="button">
+                  <span class="visually-hidden">Вперед</span>
+                </button>
+                <button class="partners-button partners-button-next" type="button">
+                  <span class="visually-hidden">Назад</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
 
       </main>
 
       <footer class="footer">
-
-
-
-
+        <div class="footer__container">
+          <picture class="logo">
+            <source media="(min-width: 1024px)" srcset="./svg/logo-header.svg">
+            <source media="(max-width: 1023px)" srcset="./svg/logo-mobile.svg">
+            <img class="logo-footer" src="./svg/logo-header.svg" alt="Логотип шиномонтажа">
+          </picture>
+          <p class="phone">
+            <a class="contacts__phone" href="tel:88005551326">8 (800) 555-13-26</a>
+          </p>
+          <p class="whatsapp">
+            <a href="#0" class="contacts__whatsapp">Написать директору в WhatsApp</a>
+          </p>
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#0">Услуги</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#0">Преимущества</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#0">Работы</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#0">Цены</a>
+            </li>
+          </ul>
+          <ul class="footer-logo__list">
+            <li class="footer-logo__item">
+              <a class="footer-logo__link" href="#0">
+                <img src="./img/avito-logo.png" alt="Логотип Avito" width="112" height="28">
+              </a>
+            </li>
+            <li class="footer-logo__item">
+              <a class="footer-logo__link" href="#0">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="#fff"><path d="M21.98 6.47a8.04 8.04 0 0 0-.51-2.67c-.28-.74-.71-1.4-1.28-1.95-.55-.56-1.21-1-1.94-1.27-.7-.27-1.5-.46-2.67-.51A75.07 75.07 0 0 0 11.04 0C8.05 0 7.68.01 6.51.06a8.04 8.04 0 0 0-2.67.52c-.74.28-1.4.7-1.95 1.27-.56.55-1 1.21-1.27 1.94C.35 4.5.16 5.3.1 6.46A75.07 75.07 0 0 0 .04 11c0 2.99.01 3.36.06 4.54.05 1.17.24 1.97.51 2.67.28.73.72 1.4 1.28 1.95.55.55 1.21.99 1.94 1.26.7.27 1.5.46 2.67.52 1.18.05 1.55.06 4.54.06 2.98 0 3.36-.01 4.53-.06a8.04 8.04 0 0 0 2.67-.52 5.63 5.63 0 0 0 3.22-3.21c.27-.7.46-1.5.51-2.67.05-1.18.06-1.55.06-4.54 0-2.98 0-3.36-.05-4.53ZM20 15.45a6.03 6.03 0 0 1-.38 2.04 3.65 3.65 0 0 1-2.09 2.1c-.39.14-.97.32-2.04.37-1.16.05-1.51.06-4.44.06-2.94 0-3.3-.01-4.45-.06a6.03 6.03 0 0 1-2.04-.38 3.39 3.39 0 0 1-1.26-.82 3.42 3.42 0 0 1-.82-1.26 6.05 6.05 0 0 1-.38-2.05 77.4 77.4 0 0 1-.07-4.44c0-2.93.02-3.29.07-4.44.04-1.08.22-1.66.38-2.04.17-.48.45-.92.82-1.27.36-.36.79-.64 1.26-.82.4-.15.98-.33 2.05-.38C7.77 2.01 8.1 2 11.05 2c2.94 0 3.29.01 4.44.06 1.08.05 1.66.23 2.04.38.48.18.92.46 1.27.82.36.36.64.79.82 1.27.15.38.33.97.38 2.04.05 1.16.06 1.5.06 4.44 0 2.94-.01 3.28-.06 4.44Z"/><path d="M11.04 5.35a5.65 5.65 0 1 0 0 11.3 5.65 5.65 0 0 0 0-11.3Zm0 9.32a3.67 3.67 0 1 1 0-7.34 3.67 3.67 0 0 1 0 7.34ZM18.24 5.13a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/></svg>
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+        </div>
+        <div class="footer__copyright">
+          <p>2016-2021 © "Шины мигом"</p>
+        </div>
       </footer>
-
 
     </div>
 
